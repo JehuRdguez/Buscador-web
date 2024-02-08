@@ -1,0 +1,207 @@
+/* Configuraciones iniciales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: rgb(255, 239, 223);
+    min-height: 100hv;
+    overflow-x: hidden;
+}
+
+.titulo {
+    font-size: xx-large;
+}
+
+.texto {
+    font-size: larger;
+    text-align: justify;
+}
+
+.textoLista {
+    font-size: larger;
+}
+
+.carousel-image {
+    height: 600px;
+    object-fit: cover;
+}
+
+header {
+    position: absolute;
+    top: -20%;
+    left: 0;
+    width: 100%;
+    padding: 48px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+/* Diseño de la barra al hacer scroll hacia abajo */
+.barra-superior {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0);
+    transition: background-color 0.5s;
+}
+
+.linea-hover.hover-activo {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 6px 8px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+    position: relative;
+    margin-top: -1.45em;
+    transition: 0.3s all;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Diseño de la parte del logo */
+#logoImg {
+    position: absolute;
+    border-radius: 100%;
+    width: 30px;
+    margin-left: -2em;
+    margin-top: -0.3em;
+}
+
+.logo {
+    font-size: 1em;
+    color:#ffffff;
+    pointer-events: none;
+    margin-top: -23px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-right: auto;
+    transition: 0.3 all;
+}
+
+.logo.barra-activa {
+    font-size: 1em;
+    color:rgb(255, 255, 255);
+    pointer-events: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Diseño base del menú */
+.navegacion {
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.navegacion a.linea-hover {
+    margin-top: -1.45em;
+}
+
+.linea-hover {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 6px 8px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+    position: relative;
+    transition: 0.3s all;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover de menú */
+.linea-hover:hover {
+    color: #ffffff;
+}
+
+/* Color de linea en hover */
+.linea-hover::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s;
+}
+
+/* Tamaño de la linea */
+.linea-hover:hover::after {
+    width: 100%;
+}
+
+/* Diseño del buscador */
+.buscador {
+    text-decoration: none;
+    color: #00132d;
+    padding: 6px 8px;
+    border-radius: 20px;
+    margin-top: -5%;
+    font-weight: 600;
+    position: relative;
+    transition: 0.3s all;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navegacion a.buscador {
+    margin-top: -1.45em;
+}
+
+.tituloHeader {
+    color: #ffffff;
+    position: absolute;
+    padding-top: 10em;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.tarjetaContenido {
+    border-radius: 20px;
+    background-color: rgb(255, 252, 252);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
+    color: #4f3333;
+    width: 80%;
+    padding: 2em 5em;
+    margin-top: -8em;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.imgInicio {
+    background-image: url('../img/grill.jpg');
+    background-size: 100%;
+    background-position: center;
+    padding-top: 40em;
+    z-index: 2;
+}
+
+.seccionFooter {
+    background-color: #4f3333;
+    color: #ffffff;
+    margin-top: 2em;
+    padding: 2em;
+    right: 0;
+    left: 0;
+    text-align: center;
+
+}
+
